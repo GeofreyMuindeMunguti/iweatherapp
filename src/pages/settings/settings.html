@@ -1,0 +1,49 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+     <h4>Select your city</h4>
+        <ion-list radio-group [(ngModel)]="relationship" (ionChange)="mcqAnswer($event)">
+           
+            <ion-item>
+              <ion-label>Nairobi</ion-label>
+              <ion-radio value="184742"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Mombasa</ion-label>
+              <ion-radio value="186301"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Machakos</ion-label>
+              <ion-radio value="188492" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Eldoret</ion-label>
+              <ion-radio value="198629" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Kisumu</ion-label>
+              <ion-radio value="191245" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Lamu</ion-label>
+              <ion-radio value="189741" [disabled]="isDisabled"></ion-radio>
+            </ion-item>
+
+          </ion-list>
+          <button ion-button (click)="Done()">Done</button>
+      
+
+</ion-content>
